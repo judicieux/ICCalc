@@ -1,4 +1,5 @@
 import sys
+
 lang = {
     "russe":0.0529,
     "serbe":0.0643,
@@ -18,12 +19,14 @@ lang = {
     "francais":0.0772,
     "malaysien":0.0778,
 }
+
 def main():
     try:
         if sys.argv[1] == "-c":
             indicator(sys.argv[2])
     except:
         raise SystemExit
+
 def indicator(text: str):
     try:
         plain  = "".join([x.upper() for x in text.split() if  x.isalpha()])
@@ -43,6 +46,7 @@ def indicator(text: str):
         closest(IC)
     except:
         raise SystemExit
+
 def closest(v: float):
     try: 
         diff = float('inf')
@@ -53,4 +57,5 @@ def closest(v: float):
         print(x)
     except:
         raise SystemExit
+
 main()
