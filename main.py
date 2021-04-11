@@ -38,11 +38,11 @@ def indicator(text: str):
             else:
                 freqs[i] = 1
         print(freqs)
-        freqsum = 0.0
+        fs = 0.0
         alpha = [chr(i) for i in range(ord('A'), ord('Z') + 1)]
         for i in alpha:
-            freqsum += freqs[i] * (freqs[i] - 1)
-        IC = freqsum / (N * (N - 1))
+            fs += freqs[i] * ( freqs[i] - 1 )
+        IC = fs / (N * ( N - 1 ))
         closest(IC)
     except:
         raise SystemExit
