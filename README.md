@@ -1,2 +1,2 @@
 # ICCalc
-In progress...
+Index of coincidences calculator.
