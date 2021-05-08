@@ -1,2 +1,2 @@
 # ICCalc
-Index of coincidences calculator.
+Index of coincidence calculator.
